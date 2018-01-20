@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>变更的命名规范</title>
+	</head>
+	<body>
+		
+		变更名只能由英语字母、数字、下划线、美元符号$构成，且不能以数字开头，并且不能是javascrip保留字;
+		
+		<script type="text/javascript">
+			/* 正确的命名规范
+				var haha = 300;
+				var xixi = 350;
+				var a1 = 100;
+				var a2 = 150;
+				var abc_123 = 200;
+				var $abc = 999;
+				var $o0_o0$ = 110;
+				var $ = 120;
+				var _ = 130;
+				var___ =140;
+				console.log($abc)
+			*/
+			
+			
+		/*错误的命名	
+			//不能怪异符号			var a-1 =1000;
+			//不能怪异符号			var a@ =1000;
+			//不能数字开头			var 2yesr = 1000;
+			//不能怪异符号			var a*a# = 1000;
+			//不能用空格			var a b = 1000;
+		*/
+		
+		
+		var A = 300;
+		var a = 888;
+		console.log(A + a)
+		
+		</script>
+	</body>
+</html>

@@ -11,12 +11,11 @@
 			<li></li>
 		</ul>
 	<!--动态获取TagName方法-->	
-		<script type="text/javascript">
-			
+		<script type="text/javascript">			
 			window.onload = function(){
 				var Oul = document.getElementById('list');//静态方法获取ID
 				var Oli = Oul.getElementsByTagName('li');//动态获取list里面的li
-			//	alert(Oli.length); //当前ID下面的li的总数
+			//	alert(Oli.length); 当前ID下面的li的总数
 			}
 		</script>
 	<!--动态获取TagName方法-->
@@ -25,10 +24,14 @@
 	<!--动态获取TagName方法-->
 	<script type="text/javascript">
 		window.onload = function(){
+			var abtn = document.getElementsByTagName('input');
 			document.title = 'js修改标题';//js修改标题方法
-			document.body.innerHTML = '<input type="button" value="按钮"/>'; 
-		}
-		
-	</script>
+			document.body.innerHTML = '<input type="button" value="按钮"/><input type="button" value="按钮"/>';
+			abtn[0].onclick=function(){alert(1)};
+			abtn[1].onclick=function(){alert(2)};
+		}		
+	</script>	
+
 	</body>
 </html>
+192.168.90.51,192.168.139.112,192.168.139.156,192.168.139.75,192.168.139.150,192.168.20.121,192.168.146.20
