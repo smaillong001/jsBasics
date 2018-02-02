@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>08关系运算符</title>
+		<style type="text/css">
+			h4{color:red}
+		</style>
+	</head>
+	<body>
+		<h1>关系运算符</h1>
+		<p>“数学运算符”：+  -  *  /</p>
+		<p>>大于号</p>
+		<p>“<”小于号</p>
+		<p>关系运算符，得到的结果都是布尔值，也就是说得到的东西要么是true，要么是false</p>
+		
+		<h4>注意，在JS中=符号只有一个意思！表示赋值！！<br />
+			如果想判断两个东西，是否相等，需要使用符号==
+		</h4>
+		<p>==等等不严谨，会将不同类型的东西，转为相同类型进行比较：</p>
+		<p>全等于，就是三个等号===</p>
+		<p>==两个等号，不严谨，”5”和5是true； ===三个等号更为严谨，”5”和5是false。</p>
+		<h5>!= 就是==的反面；   !==就是===的反面</h5>
+		<!--
+		<script type="text/javascript">
+		//大于号	
+			console.log(5 > 6); //结果是false
+			console.log(55>6);//结果为true
+			console.log(55>66);//结果是false
+		
+		//小于号
+			console.log(-6<9);
+			console.log(-7<-5);
+		
+		//大于等于号
+			console.log(16>=5)	;
+			console.log(16 >= 16);
+			console.log(16 >= 32);
+		
+		//小于等于号
+			console.log(5<=5)	;
+			console.log(6 <= 10);
+			console.log(6 <= 3);
+
+		</script>
+		-->
+		<script>
+			//等于号
+			console.log(5 == 5);		//true	
+			console.log("我爱北京天安门" == "我爱北京天安门");//true
+			
+			//不能用一个等号来表示等于的关系
+		   //console.log(5 = 6);
+		   
+		   
+		  //等于
+		  //==这个符号不严格，类型不同，也会帮你转换成相同的类型，然后进行比较
+		//		  console.log( 5 == "5" );//true  
+		//		  console.log("56" == 56);//true
+		  
+			//全等于
+			console.log(56 === "56");//false
+			console.log("56" === 56);//falsev
+			console.log("56" === "56");//true
+			console.log(56 === 56);//true
+		
+		
+		//!= 就是==的反面；   !==就是===的反面
+		console.log(3 != 6);//true
+		console.log(5 !="5");//false 因为5==”5”是true，所以反过来就是false。
+		console.log(5 !== 5);//true  因为5===”5”是flase，所以反过来就是true。
+		
+		console.log("5" == "5");//true
+		console.log("5" != "5");//false  5不等于5
+		
+		console.log("4" == 4); //true
+		console.log("4" != 4); //false
+		
+		console.log("4" === 4); //false
+		console.log("4" !== 4); //true
+		
+		
+		
+		
+		
+		</script>
+		
+		
+		
+	</body>
+</html>
