@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>体重方法2</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//第一步，输入身高和体重
+			var hei = parseFloat(prompt("请输入身高，单位是米"));
+			var wei = parseFloat(prompt("请输入体重，单位是公斤"));
+			var mbi = wei / Math.pow(hei,2);
+			if( mbi >= 32){
+				alert("体重膨胀，要多锻炼")
+			}else if( mbi >= 28){
+				alert("体重过胖")
+			}else if( mbi >= 25){
+				alert("体重过重")
+			}else if(mbi > 18 ){
+				alert("体重正常")
+			}else{
+				alert("体重偏瘦，增加营养")
+			}
+		</script>
+	</body>
+</html>

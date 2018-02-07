@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>22输入汽油编号得价格</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//第一步：输入汽油编号
+			var bianhao = parseInt(prompt("请输入汽油编号"));
+			var sheng = parseFloat(prompt("请输入多少升级"));
+			if(bianhao == 92){
+				if(sheng >20){
+					var pus = sheng * 5.9
+				}else{
+					var pus = sheng *6
+				}
+			}else if(bianhao == 97){
+				if( sheng > 30){
+					var pus = sheng * 6.95
+				}else{
+					var pus = sheng * 7
+				}
+			}else{
+				alert("对不起，没有这个型号的汽油 ")
+			}
+			alert("价格是" + pus)
+		</script>
+	</body>
+</html>
