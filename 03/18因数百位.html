@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>因数百倍</title>
+	</head>
+	<body>
+		<h3>百倍函数，这个函数功能是，接收一个参数，返回这个参数的百位数</h3>
+		<h4>parseInt()取整数部分</h4>
+		<h5>例如:输出455的百倍是4</h5>
+		<h5>例如:输出123的百倍是1</h5>
+		<script type="text/javascript">
+			console.log(baiwei(456));
+			console.log(shiwei(123));
+			console.log(gewei(789));
+			//百倍函数，这个函数功能是，接收一个参数，返回这个参数的百位数			
+			function baiwei(num){
+				return parseInt(num/100) 
+			}
+			
+			//十位函数
+			function shiwei(num){
+				return parseInt(num % 100 / 10) 
+			}
+			
+			//个位函数
+			function gewei(num){
+				return parseInt(num % 10) 
+			}
+		</script>
+	</body>
+</html>

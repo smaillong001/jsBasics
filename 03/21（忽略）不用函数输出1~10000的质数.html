@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>不用函数输出1~10000的质数</title>
+	</head>
+	<body>
+		<h2>1~10000的质数</h2>
+		<script>
+			for (var i=2; i<=10000; i++) {
+				var sum=0; //累加器
+				for(var j=1; j<i ;j++){
+					if(i % j==0){
+						sum++;
+					}
+				}
+				if(sum==2){
+					console.log(i);
+				}
+			}
+		</script>
+	</body>
+</html>

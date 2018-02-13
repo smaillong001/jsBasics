@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>完美因数和</title>
+	</head>
+	<body>
+		<h1>因数和</h1>
+		<script type="text/javascript">
+			
+			for(var i=1; i<=10000; i++){
+				if(i==yinshuhe(i)){
+					console.log(i)
+				}
+				
+			}
+			//返回a的因数和，比如传入21，返回11
+			//因为1+3+7 ==11（不包括21自己）
+			function yinshuhe(a){
+				var sum=0;
+				for (var i=1; i<a; i++) {
+					if(a%i ==0){
+						sum = sum + i;
+					}
+				}
+				//返回
+				return sum
+			}
+			
+		</script>
+	</body>
+</html>

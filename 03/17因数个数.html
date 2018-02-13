@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>因数个数</title>
+	</head>
+	<body>
+		<h4>因数个数函数，功能是输入一个数字，返回这个数字的因数个数。</h4>
+		<script type="text/javascript">
+			//因数个数函数，功能是输入一个数字，返回这个数字的因数个数。
+			console.log(yinshugeshu(48));
+			function yinshugeshu(num){
+				var sum=0;
+				for (var i=1; i<=num; i++) {
+					
+					
+					if(num % i==0){
+						sum =sum+1;
+					}
+				}
+				return sum;
+			}
+		</script>
+	</body>
+</html>

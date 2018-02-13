@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>作业1</title>
+	</head>
+	<body>
+		<!--方法1-->
+		<!--<script type="text/javascript">
+			var num = parseInt(prompt("请输入一个数能不能被5或6整除"));
+				if(num % 5 ==0){
+					//能被5整除	
+					if(num %6 ==0){
+						alert("能被5和6整除");
+					}else{
+						alert("能被5整除，不能被6整除");
+					}
+				}else{
+					//不能够被5整除
+					if(num %6 ==0){
+						alert("能被6整除");
+					}else{
+						alert("不能被5、6整除");
+					}
+				}
+			
+		</script>-->
+		
+		
+		<!--方法2-->
+		<script type="text/javascript">
+			var num = parseInt(prompt("请输入一个数能不能被5或6整除"));
+			if(num%5==0 && num%6==0 ){
+				alert("能被5和6整除")
+			}else if( num % 5==0){
+				alert("能被5整除，不能被6整除")
+			}else if( num % 6==0){
+				alert("能被6整除，不能被5整除")
+			}else{
+				alert("都不能被整除")
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>作业2</title>
+	</head>
+	<body>
+		<h1>找寻类题目用穷举法</h1>
+		<h3>题目：找出1~1000中能被5或6整除的数</h3>
+		<p>也就是说外层一个for,内层一个if,一个一个试</p>
+		<script type="text/javascript">
+			
+			
+			for (var i=1; i<=1000 ;i++) {
+				//外层for循环就是一个一个去试
+				if(i%5==0 && i%6==0){
+					console.log(i)
+				}
+			}
+		</script>
+	</body>
+</html>

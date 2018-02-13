@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>22用户输入一个偶数，拆写成两个质数的和</title>
+	</head>
+	<body>
+		<h2>请将偶数100，拆写成两个质数的和，如下：</h2>
+		<h3>3、 97</h3>
+		<h3>11、 89</h3>
+		<h4>算法思路：从2开始，如果2是质数，且100-2也是质数，那么那么输出</h4>
+		<script>
+			//算法思路：从2开始，如果2是质数，且100-2也是质数，那么那么输出
+			for (var i=1; i<=100; i++) {
+				if(zhishu(i) && zhishu(100-i)){
+					console.log("数字100能够表示为"+ i + "与"+(100-i) +"的和")
+				}
+			}
+			
+			
+			//传入48，传回10
+			function yinshugeshu(num){
+				var sum=0;  //累加器
+				//从1开始到这个数字，一个个被这个数除
+				//如果能够除尽，那么累加器加1
+				for (var i=1; i<=num; i++) {
+					if(num%i ==0){
+						sum++
+					}
+				}
+				//最后返回这个return
+				return sum;
+			}
+		
+		
+			//判断这个数是不是质数，接收数字，返回true或flase
+			//比如传入21，返回false
+			//比如传入13，返回true
+		function zhishu(num){
+			if(yinshugeshu(num) ==2){
+				return true;
+			}else{
+				return false
+			}
+		}
+		
+		</script>
+	</body>
+</html>

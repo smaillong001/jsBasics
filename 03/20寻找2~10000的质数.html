@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>1~10000的质数</title>
+	</head>
+	<body>
+		<h2>质数就是只能被1或自己整除的数</h2>
+		<h4>如：2、3、5、7、等等</h4>
+		<h3>因数个数函数，接收一个数字，返回这个数字的约数个数</h3>
+		<h3>比如：传入48，传回10</h3>
+		<h3>比如：传入21，传回4</h3>
+		<script type="text/javascript">
+			/*console.log(yinshugeshu(48));//因数传入48，传回10
+			console.log(zhishu(21)); //传21返回false*/
+			
+			
+			for (var i=2; i<=10000; i++ ) {
+				if(zhishu(i)){
+					console.log(i)
+				}
+			}
+			
+			
+			
+			//传入48，传回10
+			function yinshugeshu(num){
+				var sum=0;  //累加器
+				//从1开始到这个数字，一个个被这个数除
+				//如果能够除尽，那么累加器加1
+				for (var i=1; i<=num; i++) {
+					if(num%i ==0){
+						sum++
+					}
+				}
+				//最后返回这个return
+				return sum;
+			}
+		
+		
+			//判断这个数是不是质数，接收数字，返回true或flase
+			//比如传入21，返回false
+			//比如传入13，返回true
+		function zhishu(num){
+			if(yinshugeshu(num) ==2){
+				return true;
+			}else{
+				return false
+			}
+		}
+		
+		</script>
+	</body>
+</html>

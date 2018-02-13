@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>输出因数的个数</title>
+	</head>
+	<body>
+		<h2>用户输入一个数，这个数整除</h2>
+		<script type="text/javascript">
+			//用户输入一个数
+			var num = parseInt(prompt("请输入一个数"));
+			//找因数
+			//比如用户输入48，要从1~48，分别除以48这个数
+			//穷举法
+			var amount =0
+			for (var i=1; i<=num; i++) {
+				if(num%i ==0){
+//					console.log(i)   不想输出
+					amount++; //自增加1
+				}
+			}
+			//循环语句结束后，问题就产生了，弹出结果
+			if(amount==2){
+				alert("是质数")
+			}else(
+				alert("不是")
+			)
+			alert(amount)
+		</script>
+	</body>
+</html>
