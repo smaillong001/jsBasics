@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="65" height="90" baseProfile="full">
+
+
+
+    <defs>
+
+
+
+    <!-- 放射渐变 -->
+
+
+
+    <radialGradient id="radialGradient_r3" cx="50%" cy="50%" r="100%" fx="50%" fy="50%">
+
+
+
+        <stop offset="0%" style="stop-color:red;stop-opacity:0.2" />
+
+
+
+        <stop offset="50%" style="stop-color:red;stop-opacity:1" />
+
+
+
+        <stop offset="100%" style="stop-color:red;stop-opacity:0.2" />
+
+
+
+    </radialGradient>
+
+
+
+</defs>
+
+
+
+    <!-- 圆1 -->
+
+
+
+    <circle cx="33" cy="60" r="0" stroke="black" stroke-width="0" fill="red" opacity="1" style="fill:url(#radialGradient_r3)">
+
+
+
+        <animate attributeName="r" attributeType="XML" begin="0s" dur="2s" from="1" to="25" repeatCount="indefinite" />
+
+
+        <animate attributeName="opacity" attributeType="CSS" begin="0s" dur="2s" from="1" to="0" repeatCount="indefinite"/>
+
+
+
+    </circle>
+
+
+
+    <!-- 圆2 -->
+
+
+
+    <circle cx="33" cy="60" r="0" stroke="black" stroke-width="0" fill="red" opacity="1" style="fill:url(#radialGradient_r3)">
+
+
+
+        <animate attributeName="r" attributeType="XML" begin="1.5s" dur="2s" from="1" to="25" repeatCount="indefinite" />
+
+
+
+        <animate attributeName="opacity" attributeType="CSS" begin="1.5s" dur="2s" from="1" to="0" repeatCount="indefinite"/>
+
+
+
+    </circle>
+
+
+
+</svg>
+
+<g transform="translate(-480, -290)">
+
+
+
+<!-- 内圈圆 -->
+
+
+
+<circle cx="513" cy="350" r="22" style="fill:rgba(61,216,241,0);stroke:#6ae3eb;stroke-width:1">
+
+
+
+</circle>
+
+
+
+<!-- 中间圆 -->
+
+
+
+<circle cx="513" cy="350" r="25" style="fill:rgba(61,241,218,0);stroke:rgba(61,216,241,1);stroke-width:1.5">
+
+
+
+</circle>
+
+
+
+<!-- 外部分瓣圆环 -->
+
+
+
+<circle cx="513" cy="350" r="25" stroke-dasharray="25,28" style="fill:rgba(61,241,218,0);stroke:#00fee2;stroke-width:7">
+
+
+
+    <animateTransform attributeName="transform" begin="0s" dur="5s" type="rotate" from="0 513 350" to="360 513 350" repeatCount="indefinite" />
+
+
+
+</circle>
+
+
+
+</g>
+
+<!-- 小水滴2 -->
+
+
+
+<g transform="translate(30, -30)" style="pointer-events: none;">
+
+
+
+    <path transform="rotate(180) scale(0.11)" fill="url(#SVGID_1_)" d="M126.8,192.2C142.4,172.5,160,143,160,110c0-59.1-56.5-107-56.5-107S47,50.9,47,110
+
+
+
+c0,33,17.6,62.5,33.2,82.2C92.5,176.7,114.5,176.7,126.8,192.2z"/>
+
+
+
+    <animateMotion path="M15 0 L15 90" begin="0.2s" dur="0.8s" repeatCount="indefinite"/>
+
+
+
+</g>
+	</body>
+</html>
